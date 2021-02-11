@@ -8,7 +8,7 @@ require (
 	github.com/google/uuid v1.2.0 // indirect
 	github.com/imdario/mergo v0.3.11 // indirect
 	github.com/jackc/pgproto3/v2 v2.0.7 // indirect
-	github.com/jackc/pgx/v4 v4.10.1 // indirect
+	github.com/jackc/pgx/v4 v4.10.1
 	github.com/jackc/tern v1.12.3 // indirect
 	github.com/kyleconroy/sqlc v1.6.0 // indirect
 	github.com/mitchellh/copystructure v1.1.1 // indirect
