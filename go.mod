@@ -10,6 +10,7 @@ require (
 	github.com/jackc/pgproto3/v2 v2.0.7 // indirect
 	github.com/jackc/pgx/v4 v4.10.1 // indirect
 	github.com/jackc/tern v1.12.3 // indirect
+	github.com/kyleconroy/sqlc v1.6.0 // indirect
 	github.com/mitchellh/copystructure v1.1.1 // indirect
 	github.com/spf13/cobra v1.1.1 // indirect
 	github.com/vektah/gqlparser/v2 v2.1.0

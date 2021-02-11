@@ -5,18 +5,31 @@ package graph
 
 import (
 	"context"
-	"fmt"
+	"math/rand"
+	"strconv"
 
-	"github.com/Zireael13/go-graphql/graph/generated"
-	"github.com/Zireael13/go-graphql/graph/model"
+	"github.com/Zireael13/go-graphql/pkg/graph/generated"
+	"github.com/Zireael13/go-graphql/pkg/graph/model"
 )
 
 func (r *mutationResolver) CreateTodo(ctx context.Context, input model.NewTodo) (*model.Todo, error) {
-	panic(fmt.Errorf("not implemented"))
+
+	todo := &model.Todo{
+		ID:   strconv.FormatInt(int64(rand.Int()), 10),
+		Text: input.Text,
+		User: &model.User{
+			ID:   input.UserID,
+			Name: "Matt",
+		},
+	}
+
+	r.todos = append(r.todos, todo)
+
+	return todo, nil
 }
 
 func (r *queryResolver) Todos(ctx context.Context) ([]*model.Todo, error) {
-	panic(fmt.Errorf("not implemented"))
+	return r.todos, nil
 }
 
 // Mutation returns generated.MutationResolver implementation.

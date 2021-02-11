@@ -1,7 +1,7 @@
 package graph
 
 import (
-	"github.com/Zireael13/go-graphql/graph/model"
+	"github.com/Zireael13/go-graphql/pkg/graph/model"
 )
 
 // This file will not be regenerated automatically.

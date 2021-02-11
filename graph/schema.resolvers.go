@@ -7,8 +7,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/Zireael13/go-graphql/pkg/graph/generated"
-	"github.com/Zireael13/go-graphql/pkg/graph/model"
+	"github.com/Zireael13/go-graphql/internal/graph/generated"
+	"github.com/Zireael13/go-graphql/internal/graph/model"
 )
 
 func (r *mutationResolver) CreateTodo(ctx context.Context, input model.NewTodo) (*model.Todo, error) {
